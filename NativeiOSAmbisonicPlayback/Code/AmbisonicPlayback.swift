@@ -26,7 +26,7 @@ class AmbisonicPlayback
     public func StartEngine(){
         do {
             // get url
-            guard let ambisonicFileURL = Bundle.main.url(forAuxiliaryExecutable: "AmbixMetronome.caf")
+            guard let ambisonicFileURL = Bundle.main.url(forResource: "AmbixMetronome", withExtension: "caf")
             else{
                 print("Issue Locating File")
                 return
